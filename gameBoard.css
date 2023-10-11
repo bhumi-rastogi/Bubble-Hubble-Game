@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman';
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(11, 121, 103);
+}
+
+#gameBoard{
+    overflow: hidden;
+    width: 75%;
+    height: 80%;
+    border-radius: 1%;
+    background-color: #ffffff;
+}
+
+#gameBoardHeader{
+    width: 100%;
+    height: 15%;
+    background-color:rgb(230, 93, 141);
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 20%;
+}
+
+#gameTile{
+    display: flex;
+    align-items: center;
+    gap: 20%;
+}
+
+.numBox{
+    padding: 10px;
+    color: black;
+    font-weight: 600;
+    font-size:medium;
+    background-color: white;
+    border-radius: 10%;
+}
+
+#gameBoardBubbles{
+    width: 100%;
+    height: 85%;
+    padding: 20px;
+    display: flex;
+    gap: 3%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.bubble{
+    width: 60px;
+    height: 60px;
+    background-color:rgb(101, 130, 125);
+    color: rgb(0, 0, 0);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: medium;
+}
+
+.bubble:hover{
+    cursor: grab;
+    background-color: rgb(182, 157, 111);
+}
