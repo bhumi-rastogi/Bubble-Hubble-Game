@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman';
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    align-content: center;
+}
+
+#title{
+    font-style: italic;
+    text-align: center;
+    padding-top: 10%;
+    font-size: xxx-large;
+}
+
+#playerName{
+    margin-top: 5%;
+    text-align: center; 
+}
+
+#playerName > input{
+    padding: 1%;
+    border-radius: 2%;
+    font-size: medium;
+}
+
+h1{
+    text-align: center;
+}
+
+.start-instructions{
+    border: 2px solid #25001c;
+    border-radius: 5%;
+    background-color: #b24b4b;
+    padding: 10px 18px;
+    text-align: center;
+    margin-top: 7px;
+    font-size: 20px;
+    margin-left: 12px;
+    cursor: pointer;
+    background-color: rgb(11, 121, 103);
+    width: max-content;
+}
+
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.options {
+    position: absolute;
+    bottom: 20%;
+    right: 42%;
+    gap: 91%;
+  }
+
+body
+{
+    width: inherit;
+    height: inherit;
+    opacity:0.9;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: url(https://media.istockphoto.com/id/1150441853/vector/realistic-collagen-droplets-set-isolated-on-white-background-realistic-vector-clear-dews.jpg?s=612x612&w=0&k=20&c=yQ9QCLHDAP1B0rXJEr1f5rJo1t_3oALs5dUSsmpISS8=);
+} 
