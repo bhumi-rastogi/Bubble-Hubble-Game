@@ -53,15 +53,14 @@ h1{
     justify-content: space-around;
 }
 
-.options {
+.options{
     position: absolute;
     bottom: 20%;
     right: 42%;
     gap: 91%;
-  }
+}
 
-body
-{
+body{
     width: inherit;
     height: inherit;
     opacity:0.9;
