@@ -4,10 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./TheEnd.css" />
+    <script src="./game.js"></script>
     <title>Bubble Hubble</title>
   </head>
 
-  <body>
+  <body onload="updateScoreBoard()">
+    
+    <audio id="GameEnd" autoplay>
+      <source src="./TheEnd.mp3" type="audio/mpeg">
+    </audio>
+
     <div id="main">
 
       <div id="scoreBoard">
@@ -20,22 +26,22 @@
 
           <div class="result">
 
-            <p>
+            <p id="gameResult">
               Winning or Losing line from Javascript
             </p>
 
-            <h3>Your Score: 0</h3>
+            <h3 id="gameScore">Your Score: 0</h3>
 
           </div>
 
           <div class="options">
 
             <a href="./gameBoard.html">
-              <button class="play-again">Play Again</button>
+              <button class="play-again" onclick="playAgain()">Play Again</button>
             </a>
 
             <a href="./index.html">
-              <button class="play-again">Exit</button>
+              <button class="play-again" onclick="exit()">Exit</button>
             </a>
 
           </div>

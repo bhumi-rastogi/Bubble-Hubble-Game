@@ -4,10 +4,14 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <link rel="stylesheet" type="text/css" href="./style.css"/>
+    <script src="./game.js"></script>
     <title>Bubble Hubble</title>
 </head>
 <body>
     <div id="main">
+        <audio id="FirstPage" autoplay>
+            <source src="./FirstPage.mp3" type="audio/mpeg">
+        </audio>
 
         <div id="title">
             <h1>Bubble From a Hubble</h1>
@@ -15,14 +19,14 @@
 
 
         <div id="playerName">
-            <input type="text" placeholder="Enter your name"/>
+            <input id="name" type="text" placeholder="Enter your name" maxlength="20" autofocus>
         </div>
 
 
         <div class="options">
 
-            <a href="./gameBoard.html">
-                <button class="start-instructions">Start</button>
+            <a>
+                <button class="start-instructions" onclick="startGame()">Start</button>
             </a>
 
 

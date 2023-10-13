@@ -5,84 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Bubble Hubble</title>
     <link rel="stylesheet" href="./gameBoard.css">
+    <script src="./game.js"></script>
 </head>
 
-<body>
+<body onload="loadGame()">
 
     <div id="main">
+
+        <audio id="TheStart" autoplay>
+            <source src="./TheStart.mp3" type="audio/mpeg">
+        </audio>
+
+        <audio id="clickSound">
+            <source src="./Mouse_Click.mp3" type="audio/mpeg">
+        </audio>
+
         <div id="gameBoard">
+            
             <div id="gameBoardHeader">
 
                 <div id="gameTile">
                     <h3>Target</h3>
-                    <div class="numBox">1</div>
+                    <div id="target" class="numBox">1</div>
                 </div>
 
                 <div id="gameTile">
                     <h3>Time</h3>
-                    <div class="numBox">60</div>
+                    <div id="timeLeft" class="numBox">60</div>
                 </div>
 
                 <div id="gameTile">
-                    <h3>Player's score</h3>
-                    <div class="numBox">0</div>
+                    <h3 id="name-score">Player's score</h3>
+                    <div id="score" class="numBox">0</div>
                 </div>
 
             </div>
 
             <div id="gameBoardBubbles"> 
-                <div class="bubble">1</div>
-                <div class="bubble">1</div>
-                <div class="bubble">1</div>
-                <div class="bubble">1</div>
-                <div class="bubble">1</div>
-                <div class="bubble">1</div>
-                <div class="bubble">1</div>
-                <div class="bubble">1</div>
-                <div class="bubble">1</div>
-                <div class="bubble">1</div>
-                <div class="bubble">1</div>
-                <div class="bubble">1</div>
-                <div class="bubble">1</div>
-                <div class="bubble">1</div>
-                <div class="bubble">1</div>
-                <div class="bubble">1</div>
-                <div class="bubble">1</div>
-                <div class="bubble">1</div>
-                <div class="bubble">1</div>
-                <div class="bubble">1</div>
-                <div class="bubble">1</div>
-                <div class="bubble">1</div>
-                <div class="bubble">1</div>
-                <div class="bubble">1</div>
-                <div class="bubble">1</div>
-                <div class="bubble">1</div>
-                <div class="bubble">1</div>
-                <div class="bubble">1</div>
-                <div class="bubble">1</div>
-                <div class="bubble">1</div>
-                <div class="bubble">1</div>
-                <div class="bubble">1</div>
-                <div class="bubble">1</div>
-                <div class="bubble">1</div>
-                <div class="bubble">1</div>
-                <div class="bubble">1</div>
-                <div class="bubble">1</div>
-                <div class="bubble">1</div>
-                <div class="bubble">1</div>
-                <div class="bubble">1</div>
-                <div class="bubble">1</div>
-                <div class="bubble">1</div>
-                <div class="bubble">1</div>
-                <div class="bubble">1</div>
-                <div class="bubble">1</div>
-                <div class="bubble">1</div>
-                <div class="bubble">1</div>
-                <div class="bubble">1</div>
-                <div class="bubble">1</div>
-                <div class="bubble">1</div>
-                <div class="bubble">1</div>
-                <div class="bubble">1</div>
 
             </div>
         </div>
