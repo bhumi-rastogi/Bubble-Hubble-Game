@@ -93,7 +93,7 @@ var win = ["Hip Hip Hurray, You Won", "Winner Winner Chicken Dinner", "Marvelous
 var loose = ["Better Luck, Next Time", "Doomed, You Lose", "Sorry, You Lose this time", "Oops, You Lose"];
 
 function updateScoreBoard(){
-    var randomNumber = Math.floor(Math.random() * (win.length - 0) + 0);
+    var randomNumber = Math.floor(Math.random() * (4 - 0) + 0);
     var score = localStorage.getItem("score");
     var player = localStorage.getItem("player");
 
